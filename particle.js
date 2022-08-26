@@ -155,28 +155,28 @@ function PresetWorms() {
     yy = -0.15;
     UpdateSliders();
 }
-function PresetCancer() {
-    rr = -0.1;
-    rg = -0.2;
-    ry = -0.32;
-    gr = -0.5;
-    gg = 0.55;
-    gy = -0.1;
-    yr = 0;
-    yg = 0.1;
-    yy = 0;
+function PresetBlackHole() {
+    rr = -0.9;
+    rg = 0.8;
+    ry = 0.6;
+    gr = 1;
+    gg = 0.7;
+    gy = -0.44;
+    yr = -0.07;
+    yg = -0.09;
+    yy = -1.5;
     UpdateSliders();
 }
 function PresetCells() {
     rr = -0.3;
     rg = -0.2;
-    ry = -0.32;
+    ry = -0.5;
     gr = -0.5;
     gg = 0.3;
     gy = 0;
-    yr = 0.1;
-    yg = 0.1;
-    yy = 0;
+    yr = 0.3;
+    yg = -0.3;
+    yy = -0.4;
     UpdateSliders();
 }
 function PresetChasing() {
@@ -190,6 +190,19 @@ function PresetChasing() {
     yg = -1;
     yy = 0;
     UpdateSliders();
+}
+function PresetSplitters() {
+    rr = -0.3;
+    rg = 0.81;
+    ry = -0.9;
+    gr = -0.84;
+    gg = 0.91;
+    gy = 0.06;
+    yr = 0.63;
+    yg = -0.68;
+    yy = -0.4;
+    UpdateSliders();
+
 }
 //actions
 function ResetParticles() {
