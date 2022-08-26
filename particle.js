@@ -50,6 +50,7 @@ yellow = create(numOfParticles, "yellow")
 red = create(numOfParticles, "red")
 green = create(numOfParticles, "green")
 
+
 //let gr = -0.17;
 //let gg = -0.32;
 //let gy = 0.34
