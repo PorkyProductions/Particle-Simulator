@@ -6,6 +6,7 @@
     <title></title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script type="module" src="typescript/twemoji.ts"></script>
+    <script type="module" src="typescript/onClick.ts"></script>
     <link rel="stylesheet" href="styles/globals.css">
     <link rel="stylesheet" href="styles/base.css">
 </head>
@@ -84,20 +85,20 @@
                     <h1 class="text-center text-l font-bold">PRESETS</h1>
                     <hr />
                     <br />
-                    <button class="btn" onclick="presetHunters()">Hunters</button>
-                    <button class="btn" onclick="presetSplitters()">Splitters</button><br />
-                    <button class="btn" onclick="presetWorms()">Worms</button>
-                    <button class="btn" onclick="presetBlackHole()">Ball'o'Doom</button><br />
-                    <button class="btn" onclick="presetCells()">Cells</button>
-                    <button class="btn" onclick="presetChasing()">Tag</button>
+                    <button class="btn" id="hunters" >Hunters</button>
+                    <button class="btn" id="splitters" >Splitters</button><br />
+                    <button class="btn" id="worms" >Worms</button>
+                    <button class="btn" id="ball" >Ball'o'Doom</button><br />
+                    <button class="btn" id="cells" >Cells</button>
+                    <button class="btn" id="tag" >Tag</button>
                 </div>
                 <div class="text-center px-0">
                     <h1 class="text-center text-l font-bold">Actions</h1>
                     <hr />
                     <br />
-                    <button class="btn" onclick="presetRandom()">Random Sliders</button><br />
-                    <button class="btn" onclick="resetParticles()">Reset Particles</button><br />
-                    <button class="btn" onclick="resetSliders()">ResetSliders</button>
+                    <button class="btn" id="random" >Random Sliders</button><br />
+                    <button class="btn" id="rPart" >Reset Particles</button><br />
+                    <button class="btn" id="rSlide" >ResetSliders</button>
                 </div>
             </div>
             

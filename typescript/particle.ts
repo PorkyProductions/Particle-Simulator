@@ -187,7 +187,7 @@ update();
 
 
 //presets
-const presetRandom = () => {
+export const presetRandom = () => {
     gr = Math.random() * 2 - 1;
     gg = Math.random() * 2 - 1;
     gy = Math.random() * 2 - 1;
@@ -200,7 +200,7 @@ const presetRandom = () => {
     updateSliders();
 }
 
-const presetHunters = () => {
+export const presetHunters = () => {
      gr = 0.17;
      gg = 0.32;
      gy = -0.34
@@ -212,7 +212,7 @@ const presetHunters = () => {
     yy = -0.15;
     updateSliders();
 }
-const presetWorms = () => {
+export const presetWorms = () => {
     gr = 0.17;
     gg = -0.2;
     gy = -0.34
@@ -224,7 +224,7 @@ const presetWorms = () => {
     yy = -0.15;
     updateSliders();
 }
-const presetBlackHole = () => {
+export const presetBlackHole = () => {
     rr = -0.9;
     rg = 0.8;
     ry = 0.6;
@@ -236,7 +236,7 @@ const presetBlackHole = () => {
     yy = -1.5;
     updateSliders();
 }
-const presetCells = () => {
+export const presetCells = () => {
     rr = -0.3;
     rg = -0.2;
     ry = -0.5;
@@ -248,7 +248,7 @@ const presetCells = () => {
     yy = -0.4;
     updateSliders();
 }
-const presetChasing = () => {
+export const presetChasing = () => {
     rr = 0;
     rg = 1;
     ry = -1;
@@ -260,7 +260,7 @@ const presetChasing = () => {
     yy = 0;
     updateSliders();
 }
-const presetSplitters = () => {
+export const presetSplitters = () => {
     rr = -0.3;
     rg = 0.81;
     ry = -0.9;
@@ -274,14 +274,14 @@ const presetSplitters = () => {
 
 }
 //actions
-const resetParticles = () => {
+export const resetParticles = () => {
     atoms = [];
     var numOfParticles = (canvas.width + canvas.height) * 0.2;
     yellow = create(numOfParticles, "yellow")
     red = create(numOfParticles, "red")
     green = create(numOfParticles, "green")
 }
-const resetSliders = () => {
+export const resetSliders = () => {
     gr = 0;
     gg = 0;
     gy = 0;
