@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title></title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/globals.css">
 </head>
 <body>
     <img src="./img/ppioExpermentalDark.png" alt="Porky Productions Experimental" class="m-auto">
@@ -82,35 +82,38 @@
                     <h1 class="text-center text-l font-bold">PRESETS</h1>
                     <hr />
                     <br />
-                    <button class="btn" onclick="PresetHunters()">Hunters</button>
-                    <button class="btn" onclick="PresetSplitters()">Splitters</button><br />
-                    <button class="btn" onclick="PresetWorms()">Worms</button>
-                    <button class="btn" onclick="PresetBlackHole()">Ball'o'Doom</button><br />
-                    <button class="btn" onclick="PresetCells()">Cells</button>
-                    <button class="btn" onclick="PresetChasing()">Tag</button>
+                    <button class="btn" onclick="presetHunters()">Hunters</button>
+                    <button class="btn" onclick="presetSplitters()">Splitters</button><br />
+                    <button class="btn" onclick="presetWorms()">Worms</button>
+                    <button class="btn" onclick="presetBlackHole()">Ball'o'Doom</button><br />
+                    <button class="btn" onclick="presetCells()">Cells</button>
+                    <button class="btn" onclick="presetChasing()">Tag</button>
                 </div>
                 <div class="text-center px-0">
                     <h1 class="text-center text-l font-bold">Actions</h1>
                     <hr />
                     <br />
-                    <button class="btn" onclick="PresetRandom()">Random Sliders</button><br />
-                    <button class="btn" onclick="ResetParticles()">Reset Particles</button><br />
-                    <button class="btn" onclick="ResetSliders()">ResetSliders</button>
+                    <button class="btn" onclick="presetRandom()">Random Sliders</button><br />
+                    <button class="btn" onclick="resetParticles()">Reset Particles</button><br />
+                    <button class="btn" onclick="resetSliders()">ResetSliders</button>
                 </div>
             </div>
             
 
         </div>
     <div class="flex" style="justify-content: center; text-align:center">
-        <canvas id="canvas" style="width: 700px; height: 700px" border: 1px solid black"></canvas>
+        <canvas id="canvas"></canvas>
     </div>
-    <script src="particle.js"></script>
-</body>
-</html>
-<style>
-    .btn{
-        width: 100px;
-    }
+    <script defer src="./typescript/particle.ts"></script>
+    <style>
+        canvas {
+            width: 700px;
+            height: 700px;
+            border: 1px solid black;
+        }
+        .btn{
+            width: 100px;
+        }
     .presetButton{
         width:auto;
     }
@@ -138,5 +141,6 @@
         text-align:center;
     }
 
-</style>
-
+    </style>
+</body>    
+</html>
