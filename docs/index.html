@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    
+    
+    
+  <script type="module" crossorigin src="/ParticleSimulator/assets/main.fbab666c.js"></script>
+  <link rel="stylesheet" href="/ParticleSimulator/assets/index.a0d5f943.css">
+</head>
+<body>
+    <img src="/ParticleSimulator/assets/ppioExpermentalDark.fb273249.png" alt="Porky Productions Experimental" class="m-auto block">
+
+    <div class="flex flex-col items-center  py-16 bg-gray-100">
+        <h2 class="text-center text-2xl font-bold">
+            Particle Simulator ✨🎆❇️
+        </h2>
+
+        <div>
+
+            <div class="grid">
+                <div>
+                    <h1 class="text-center text-l font-bold">RED</h1>
+                    <hr />
+
+                    <div class="sliderContainer">
+                        <p class="text-center">to Red</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderRR"> 1
+                        
+                    </div>
+                    <div class="sliderContainer">
+                        <p class="text-center">to Green</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderRG"> 1
+                        
+                    </div>
+                    <div class="sliderContainer">
+                        <p class="text-center">to Yellow</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderRY"> 1
+                        
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-center text-l font-bold">GREEN</h1>
+                    <hr />
+
+                    <div class="sliderContainer">
+                        <p class="text-center">to Red</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderGR"> 1
+                        
+                    </div>
+                    <div class="sliderContainer">
+                        <p class="text-center">to Green</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderGG"> 1
+                        
+                    </div>
+                    <div class="sliderContainer">
+                        <p class="text-center">to Yellow</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderGY"> 1
+                        
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-center text-l font-bold">YELLOW</h1>
+                    <hr />
+
+                    <div class="sliderContainer">
+                        <p class="text-center">to Red</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderYR"> 1
+                        
+                    </div>
+                    <div class="sliderContainer">
+                        <p class="text-center">to Green</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderYG"> 1
+                        
+                    </div>
+                    <div class="sliderContainer">
+                        <p class="text-center">to Yellow</p>
+                        -1 <input type="range" min="-100" max="100" value="0" class="slider" id="sliderYY"> 1
+                        
+                    </div>
+                </div>
+                <div class="text-center px-0">
+                    <h1 class="text-center text-l font-bold">PRESETS</h1>
+                    <hr />
+                    <br />
+                    <button class="btn" onclick="presetHunters()">Hunters</button>
+                    <button class="btn" onclick="presetSplitters()">Splitters</button><br />
+                    <button class="btn" onclick="presetWorms()">Worms</button>
+                    <button class="btn" onclick="presetBlackHole()">Ball'o'Doom</button><br />
+                    <button class="btn" onclick="presetCells()">Cells</button>
+                    <button class="btn" onclick="presetChasing()">Tag</button>
+                </div>
+                <div class="text-center px-0">
+                    <h1 class="text-center text-l font-bold">Actions</h1>
+                    <hr />
+                    <br />
+                    <button class="btn" onclick="presetRandom()">Random Sliders</button><br />
+                    <button class="btn" onclick="resetParticles()">Reset Particles</button><br />
+                    <button class="btn" onclick="resetSliders()">ResetSliders</button>
+                </div>
+            </div>
+            
+
+        </div>
+    <div class="flex" style="justify-content: center; text-align:center">
+        <canvas id="canvas"></canvas>
+    </div>
+    
+</body>    
+</html>
